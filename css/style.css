@@ -1,0 +1,81 @@
+:root {
+    --branco: #FFF;
+    --amarelo03: #F2D272;
+    --amarelo04: #403106;
+}
+
+.home {
+    height: 100vh;
+    padding-top: 3.125rem;
+
+    background: radial-gradient(171.4% 92.33% at 20.26% 9.94%, #F2D272 4.27%, rgba(64, 49, 6, 0.86) 67.12%, #403106 100%);
+}
+
+.home nav {
+    max-width: 1140px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.home nav .button-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.home .box-texto-principal {
+    max-width: 1140px;
+    margin: auto;
+
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+    
+    color: var(--branco);
+}
+
+.home .box-texto-principal .box-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 51%;
+}
+
+.home .box-texto-principal h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 4.125rem;
+}
+
+.home .box-texto-principal p {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+}
+
+.home .box-texto-principal button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 362px;
+    height: 42px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #F2D272;
+    background: #F2D272;
+    color: #403106;
+}
+
+.home .box-texto-principal img {
+    max-width: 53%;
+    height: auto;
+
+    position: absolute;
+    left: 43%;
+    bottom: 0;
+}
