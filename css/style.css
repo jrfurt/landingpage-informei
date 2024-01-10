@@ -11,6 +11,17 @@
     background: radial-gradient(171.4% 92.33% at 20.26% 9.94%, #F2D272 4.27%, rgba(64, 49, 6, 0.86) 67.12%, #403106 100%);
 }
 
+.home .container {
+    height: 100%;
+
+    background-image: url(/assets/img/atendente.png);
+    background-color: transparent;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-attachment: scroll;
+}
+
 .home nav {
     max-width: 1140px;
     margin: auto;
