@@ -117,6 +117,15 @@
     line-height: 1.5;
 }
 
+.main .box-section-header {
+    background-color: #FFF;
+    height: 166px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main .container-objetivo {
     height: 500px;
     background-color: #F2E6CE;
@@ -143,27 +152,19 @@
     font-family: 'Inter', sans-serif;
 }
 
-.main .container-produto .box-produto-header {
-    background-color: #FFF;
-    height: 166px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main .container-produto .box-produto-header div {
+.main .box-section-header div {
     width: 1140px;
     margin: auto;
     text-align: center;
 }
 
-.main .container-produto .box-produto-header div h2 {
+.main .box-section-header div h2 {
     text-transform: uppercase;
     margin-bottom: 0.625rem;
 }
 
-.main .container-produto .box-produto-header div p {
+.main .box-section-header div p {
     font-size: 16px;
     font-weight: 400;
 }
@@ -173,8 +174,7 @@
     flex-direction: column;
 
     width: 1140px;
-    margin: auto;
-    margin-top: 2rem;
+    margin: 2rem auto 2rem auto;
     
     position: relative;
 }
@@ -194,12 +194,29 @@
 
 .linha-vertical {
     width: 1px;
-    height: 1050px;
+    height: 1084px;
     background-color: black;
 
     position: absolute;
     top: -2rem;
     left: 50%;
+}
+
+.quadrado-2 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+
+    /* border: 10px solid #; */
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000 #F2F2F2 #F2F2F2 #000;
+    rotate: 45deg;
+
+    position: absolute;
+    left: 50%;
+    bottom: -42px;
+    translate: -0.625rem;
 }
 
 .main .container-produto .box-produto-conteudo {
@@ -242,4 +259,65 @@
     width: 740px;
     margin: auto;
     color: #FFF;
+}
+
+.main .container-sobrenos .box-cards {
+    width: 1140px;
+    margin: 2rem auto 5.625rem auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5.375rem;
+    row-gap: 3.25rem;
+}
+
+.main .container-sobrenos .card {
+    width: 542px;
+    height: 190px;
+    padding: 2rem 3.125rem;
+    
+    background: #140126;
+    color: #F2F2F2;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.426);
+    border-radius: .625rem;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.main .container-sobrenos .card-amarelo {
+    background-color: #403106;
+}
+
+.main .container-sobrenos .card img {
+    width: 75px;
+    height: 75px;
+
+    position: absolute;
+    top: -30px;
+    left: 80%;
+}
+
+.main .container-sobrenos .card span {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    margin-top: 2rem;
+}
+
+.main .container-sobrenos .card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #140126;
+    color: #F2F2F2;
 }
